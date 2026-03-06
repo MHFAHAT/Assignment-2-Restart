@@ -1,0 +1,148 @@
+{
+  "tickets": [
+    {
+      "id": 1001,
+      "title": "Login Issues - Can't Access Account",
+      "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...",
+      "customer": "John Smith",
+      "priority": "HIGH PRIORITY",
+      "status": "open",
+      "createdAt": "1/15/2024"
+    },
+    {
+      "id": 1002,
+      "title": "Payment Failed - Card Declined",
+      "description": "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
+      "customer": "Sarah Johnson",
+      "priority": "HIGH PRIORITY",
+      "status": "open",
+      "createdAt": "1/16/2024"
+    },
+    {
+      "id": 1003,
+      "title": "Unable to Download Invoice",
+      "description": "Customer cannot download their January invoice from the billing section. The download button is...",
+      "customer": "Michael Brown",
+      "priority": "MEDIUM PRIORITY",
+      "status": "in-progress",
+      "createdAt": "1/17/2024"
+    },
+    {
+      "id": 1004,
+      "title": "Incorrect Billing Address",
+      "description": "Customer's billing address shows a different city. They updated it but it still displays the old one.",
+      "customer": "Emily Davis",
+      "priority": "LOW PRIORITY",
+      "status": "open",
+      "createdAt": "1/18/2024"
+    },
+    {
+      "id": 1005,
+      "title": "App Crashes on Login",
+      "description": "Mobile app crashes immediately after entering credentials. Tried reinstalling but issue persists.",
+      "customer": "Robert Wilson",
+      "priority": "HIGH PRIORITY",
+      "status": "open",
+      "createdAt": "1/19/2024"
+    },
+    {
+      "id": 1006,
+      "title": "Subscription Renewal Issues",
+      "description": "Subscription renewal date passed but no confirmation email received and account still active.",
+      "customer": "Jessica Anderson",
+      "priority": "MEDIUM PRIORITY",
+      "status": "open",
+      "createdAt": "1/20/2024"
+    },
+    {
+      "id": 1007,
+      "title": "Two-Factor Authentication Not Working",
+      "description": "Unable to receive 2FA codes via SMS. Have tried multiple phone numbers and registered email.",
+      "customer": "David Martinez",
+      "priority": "HIGH PRIORITY",
+      "status": "open",
+      "createdAt": "1/21/2024"
+    },
+    {
+      "id": 1008,
+      "title": "Refund Not Processed",
+      "description": "Requested refund 10 days ago for order #5429. No refund received yet.",
+      "customer": "Lisa Thompson",
+      "priority": "MEDIUM PRIORITY",
+      "status": "open",
+      "createdAt": "1/22/2024"
+    },
+    {
+      "id": 1009,
+      "title": "Account Locked - Too Many Login Attempts",
+      "description": "Account locked after multiple failed login attempts. Unable to unlock using standard recovery method.",
+      "customer": "James Garcia",
+      "priority": "HIGH PRIORITY",
+      "status": "open",
+      "createdAt": "1/23/2024"
+    },
+    {
+      "id": 1010,
+      "title": "Email Verification Stuck",
+      "description": "New account creation. Email verification link expired and can't request new one.",
+      "customer": "Maria Rodriguez",
+      "priority": "LOW PRIORITY",
+      "status": "open",
+      "createdAt": "1/24/2024"
+    },
+    {
+      "id": 1011,
+      "title": "Dashboard Data Not Loading",
+      "description": "Dashboard shows loading spinner indefinitely. All other features work fine.",
+      "customer": "Christopher Lee",
+      "priority": "MEDIUM PRIORITY",
+      "status": "open",
+      "createdAt": "1/25/2024"
+    },
+    {
+      "id": 1012,
+      "title": "Profile Picture Upload Failed",
+      "description": "Cannot upload profile picture. Error message: 'File size too large' even with small images.",
+      "customer": "Amanda White",
+      "priority": "LOW PRIORITY",
+      "status": "open",
+      "createdAt": "1/26/2024"
+    },
+    {
+      "id": 1013,
+      "title": "Password Reset Email Not Received",
+      "description": "Customer requested password reset but email doesn't arrive. Checked spam folder.",
+      "customer": "Kevin Taylor",
+      "priority": "HIGH PRIORITY",
+      "status": "open",
+      "createdAt": "1/27/2024"
+    },
+    {
+      "id": 1014,
+      "title": "Cannot Update Payment Method",
+      "description": "Trying to update credit card information but system throws an error during validation.",
+      "customer": "Rachel Green",
+      "priority": "MEDIUM PRIORITY",
+      "status": "open",
+      "createdAt": "1/28/2024"
+    },
+    {
+      "id": 1015,
+      "title": "Order History Not Displaying",
+      "description": "Customer's order history page is blank even though they have made multiple purchases.",
+      "customer": "Daniel Clark",
+      "priority": "MEDIUM PRIORITY",
+      "status": "open",
+      "createdAt": "1/29/2024"
+    },
+    {
+      "id": 1016,
+      "title": "Export Data Feature Broken",
+      "description": "Customer unable to export their data in CSV format. Download button does nothing.",
+      "customer": "Sophie Brown",
+      "priority": "LOW PRIORITY",
+      "status": "open",
+      "createdAt": "1/30/2024"
+    }
+  ]
+}
