@@ -1,11 +1,24 @@
 import React from 'react';
 
-const Ticket = ({ ticket }) => {
-    return ( 
-        <div className='flex flex-col p-4 shadow-md border rounded-lg bg-white h-full justify-between'>
+const Ticket = ({ ticket, setSelectedTicket, selectedTicket }) => {
+    const priorityColors = {
+        "HIGH PRIORITY": "text-red-500",
+        "MEDIUM PRIORITY": "text-[#FEBB0C]",
+        "LOW PRIORITY": "text-green-500"
+    };
+    return (
+        <div onClick={() => {
+            if (!selectedTicket.find(t => t.id === ticket.id)) {
+                setSelectedTicket([...selectedTicket, ticket]);
+            }
+            else{
+                alert("Ticket already selected");
+            }
+        }} className='flex flex-col p-4 shadow-md border rounded-lg bg-white h-full justify-between'>
             <div className='flex justify-between items-start mb-2'>
                 <span className='font-bold text-[18px] leading-tight'>{ticket.title}</span>
-                <button className='badge badge-success bg-green-100 text-green-700 border-none px-3 py-1 rounded-full text-xs font-bold'>
+                <button className={`px-3 py-1 rounded-2xl text-xs font-bold border-none  
+                    ${ticket.status === 'open' ? 'bg-[#D1FAE5] text-green-700' : 'bg-[#F8F3B9] text-yellow-700'}`}>
                     {ticket.status}
                 </button>
             </div>
@@ -17,7 +30,9 @@ const Ticket = ({ ticket }) => {
             <div className='flex justify-between items-center text-[12px] text-gray-400 font-bold'>
                 <div>
                     <span>#{ticket.id}</span>
-                    <span className='ml-3 text-red-500'>{ticket.priority}</span>
+                    <span className={`ml-3 ${priorityColors[ticket.priority] || 'text-gray-500'}`}>
+                        {ticket.priority}
+                    </span>
                 </div>
                 <div className='flex items-center gap-2'>
                     <span>{ticket.customer}</span>
