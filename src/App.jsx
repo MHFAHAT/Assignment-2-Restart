@@ -3,6 +3,7 @@ import Navbar from './Component/Navbar/Navbar'
 import Banner from './Component/Banner/Banner'
 import Task from './Component/Task'
 import { useState } from 'react';
+import Footer from './Component/Footer';
 
 function App() {
   const [selectedTicket, setSelectedTicket] = useState([]);
@@ -19,6 +20,7 @@ function App() {
       <Banner selectedTicket={selectedTicket} resolvedTicket={resolvedTicket}></Banner>
       <Task selectedTicket={selectedTicket} setSelectedTicket={setSelectedTicket} 
       handleComplete={handleComplete} resolvedTicket={resolvedTicket}/>
+      <Footer></Footer>
     </>
   )
 }

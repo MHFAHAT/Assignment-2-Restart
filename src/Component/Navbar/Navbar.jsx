@@ -19,7 +19,7 @@ const Navbar = () => {
       <li><a>Contact</a></li> 
       </ul>
     </div>
-    <a className=" text-[18px] lg:text-[24px] font-bold">CS- Ticket System</a>
+    <a className=" text-[18px] lg:text-[24px] font-bold">CS — Ticket System</a>
   </div>
   <div className="navbar-end gap-4">
     <ul className="menu menu-horizontal px-1 hidden lg:flex">
