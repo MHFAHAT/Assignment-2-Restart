@@ -1,16 +1,17 @@
-# React + Vite
+ ## React Basics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1) What is JSX, and why is it used?
+JSX (JavaScript XML) is a syntax that lets us write HTML-like code inside JavaScript. It makes UI code easier to read and write in React by combining markup and logic in one place.
 
-Currently, two official plugins are available:
+### 2) Difference between State and Props
+- State is used to store data that can change within a component.
+- Props are used to pass data from a parent component to a child component. Props are read-only.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 3) What is the useState hook, and how does it work?
+useState is a React Hook that lets functional components store and update state. It returns a state value and a function to update that value. When the state changes, the component re-renders.
 
-## React Compiler
+### 4) How can you share state between components in React?
+State is usually stored in a parent component and passed to child components using props. This is called lifting state up.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 5) How is event handling done in React?
+Event handling is done using event attributes like onClick, onChange, etc., and assigning them a function to run when the event occurs.
