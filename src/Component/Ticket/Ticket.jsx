@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Ticket = ({ ticket, setSelectedTicket, selectedTicket }) => {
     const priorityColors = {
@@ -12,9 +13,9 @@ const Ticket = ({ ticket, setSelectedTicket, selectedTicket }) => {
                 setSelectedTicket([...selectedTicket, ticket]);
             }
             else{
-                alert("Ticket already selected");
+                toast("Ticket already selected");
             }
-        }} className='flex flex-col p-4 shadow-md border rounded-lg bg-white h-full justify-between'>
+        }} className='flex flex-col p-4 shadow-md border rounded-lg bg-white h-full justify-between hover:bg-gray-200'>
             <div className='flex justify-between items-start mb-2'>
                 <span className='font-bold text-[18px] leading-tight'>{ticket.title}</span>
                 <button className={`px-3 py-1 rounded-2xl text-xs font-bold border-none  

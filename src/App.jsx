@@ -4,6 +4,7 @@ import Banner from './Component/Banner/Banner'
 import Task from './Component/Task'
 import { useState } from 'react';
 import Footer from './Component/Footer';
+import { ToastContainer,toast } from 'react-toastify';
 
 function App() {
   const [selectedTicket, setSelectedTicket] = useState([]);
@@ -12,6 +13,7 @@ function App() {
   const handleComplete = (ticketToResolve) => {
     setSelectedTicket(prev => prev.filter(t => t.id !== ticketToResolve.id));
     setResolvedTicket(prev => [...prev, ticketToResolve]);
+    toast("Ticket marked as resolved");
   }; 
   console.log(resolvedTicket);
   return (
@@ -21,6 +23,7 @@ function App() {
       <Task selectedTicket={selectedTicket} setSelectedTicket={setSelectedTicket} 
       handleComplete={handleComplete} resolvedTicket={resolvedTicket}/>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   )
 }
