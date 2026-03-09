@@ -4,7 +4,7 @@ import TaskStatus from './Status/TaskStatus';
 import ResolveStatus from './Status/resolveStatus';
 
 const Tickets= async()=>{
-    const response = await fetch('./public/ticket.json');
+    const response = await fetch('/ticket.json');
     return response.json();
 }
 
